@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+# create thumbnails for real figures, using ImageMagick
+
+dir=thumbnail
+
+rm -rf $dir; mkdir $dir
+
+fig01=ch3_fig01.png
+fig02=ch3_fig02.png
+fig03=ch3_fig03.png
+fig04=ch3_fig04.png
+fig05=ch3_fig05.png
+fig06=ch3_fig06.png
+fig07=ch3_fig07.png
+fig08=ch3_fig08.png
+fig09=ch3_fig09.png
+fig10=ch3_fig10.png
+fig11=ch3_fig11.png
+fig12=ch3_fig12.png
+
+resize=50%
+
+convert $fig01 -thumbnail $resize $dir/$fig01
+convert $fig02 -thumbnail $resize $dir/$fig02
+convert $fig03 -thumbnail $resize $dir/$fig03
+convert $fig04 -thumbnail $resize $dir/$fig04
+convert $fig05 -thumbnail $resize $dir/$fig05
+convert $fig06 -thumbnail $resize $dir/$fig06
+convert $fig07 -thumbnail $resize $dir/$fig07
+convert $fig08 -thumbnail $resize $dir/$fig08
+convert $fig09 -thumbnail $resize $dir/$fig09
+convert $fig10 -thumbnail $resize $dir/$fig10
+convert $fig11 -thumbnail $resize $dir/$fig11
+convert $fig12 -thumbnail $resize $dir/$fig12

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+rm -rf .git
+
+rm -rf _site
+
+git init
+git add .
+git commit -m "Initial commit"
+git branch -m master gh-pages
+git remote add origin https://github.com/jianhuanliu/site.git
+git push -u origin gh-pages
